@@ -10,6 +10,7 @@ import helmet from 'helmet';
 
 // Database Connection
 import db from './db';
+import { errorHandler, notFound } from 'middlewares';
 
 const app = express();
 
@@ -21,6 +22,9 @@ app.use(express.json());
 app.get('/', (_req: Request, res: Response) => {
     res.send('hello world');
 });
+
+app.use(notFound);
+app.use(errorHandler);
 
 const PORT: number = parseInt(process.env.PORT as string) || 3000;
 
