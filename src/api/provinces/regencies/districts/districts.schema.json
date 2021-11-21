@@ -1,0 +1,18 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "District",
+    "additionalProperties": false,
+    "required": ["regency_id", "name"],
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "regency_id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        }
+    }
+}

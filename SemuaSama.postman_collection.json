@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "532375fc-f3c8-4515-aac4-904912abba40",
+		"name": "SemuaSama",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/auth/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"sunarto\",\n    \"birth_date\": \"1998-01-21\",\n    \"id_card_number\": \"2045738423800\",\n    \"email\": \"suntoio@gmail.com\",\n    \"password\": \"qwertyuiop\",\n    \"disabilities\": [{\"name\": \"tuna rungu\"}],\n    \"province_id\": \"5398d903-1df9-478b-85ff-a5796f0dacb4\",\n    \"regency_id\": \"26d7d4f7-31dc-48a7-8e86-040c4bd3240a\",\n    \"district_id\": \"760da35b-08a6-41ce-bfe1-0379156bc035\",\n    \"subdistrict_id\": \"17d6dee9-8807-4332-bed3-bbbf005c104f\",\n    \"last_job\": \"guru SD\",\n    \"last_salary\": 1600000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,56 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "User",
+    "description": "The User",
+    "additionalProperties": false,
+    "required": [
+        "email",
+        "name",
+        "password",
+        "province_id",
+        "district_id",
+        "subdistrict_id"
+    ],
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "password": {
+            "type": "string"
+        },
+        "birth_date": {
+            "type": "string"
+        },
+        "id_card_number": {
+            "type": "string"
+        },
+        "last_job": {
+            "type": "string"
+        },
+        "last_salary": {
+            "type": "number"
+        },
+        "is_validated": {
+            "type": "boolean"
+        },
+        "province_id": {
+            "type": "string"
+        },
+        "regency_id": {
+            "type": "string"
+        },
+        "district_id": {
+            "type": "string"
+        },
+        "subdistrict_id": {
+            "type": "string"
+        }
+    }
+}

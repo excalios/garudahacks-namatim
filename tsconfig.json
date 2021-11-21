@@ -100,5 +100,13 @@
   },
   "include": [
       "./src/**/*.ts"
-  ]
+  ],
+  "exclude": [
+      "./node_modules/",
+      "./db/",
+      "./docker-data/"
+  ],
+  "ts-node": {
+      "require": ["tsconfig-paths/register"]
+  }
 }

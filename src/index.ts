@@ -9,8 +9,10 @@ import morgan from 'morgan';
 import helmet from 'helmet';
 
 // Database Connection
-import db from './db';
+import db from 'db';
 import { errorHandler, notFound } from 'middlewares';
+
+import ApiRoutes from 'api/index.routes';
 
 const app = express();
 
@@ -18,6 +20,8 @@ app.use(cors());
 app.use(helmet());
 app.use(morgan('combined'));
 app.use(express.json());
+
+app.use('/api', ApiRoutes);
 
 app.get('/', (_req: Request, res: Response) => {
     res.send('hello world');

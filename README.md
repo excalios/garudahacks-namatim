@@ -8,6 +8,7 @@ REST API Created with expressjs using typescript for garudahacks 2.0 2021
 2. Fill the .env file accordingly
 3. Follow the steps on [Production](#Production) or [Development](#Development) according
 on your environment
+4. Run `npm run migrate` and `npm run seed`
 
 ### Dependency
 
